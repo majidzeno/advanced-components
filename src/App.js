@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import MouseTracker from "./implementations/renderProps";
+import Header from "./components/header";
 import {
   Componenet1,
   Componenet2,
@@ -11,6 +12,7 @@ import Hover from "./implementations/hovering";
 function App() {
   return (
     <div className="App" style={{ borderColor: "blue", borderWidth: 15 }}>
+      <Header />
       <h2>yow yow</h2>
       <Hover render={hovering => <MouseTracker hovering={hovering} />}></Hover>
       <Hover render={hovering => <Componenet1 hovering={hovering} />}></Hover>
