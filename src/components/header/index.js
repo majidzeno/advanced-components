@@ -3,10 +3,10 @@ import Logo from "./logo.svg";
 import "./style.scss";
 const Header = () => {
   return (
-    <header>
+    <header data-test="headerCmp">
       <div className="wrap">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <img data-test="logoIMG" src={Logo} alt="logo" />
         </div>
       </div>
     </header>
